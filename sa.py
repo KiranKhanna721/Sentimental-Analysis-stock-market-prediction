@@ -5,6 +5,7 @@ from alpha_vantage.timeseries import TimeSeries
 from sklearn.metrics import mean_squared_error
 from bs4 import BeautifulSoup
 import streamlit as st
+nltk.download('stopwords')
 import matplotlib.pyplot as plt
 from urllib.request import urlopen
 from urllib.request import Request
