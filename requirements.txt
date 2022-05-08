@@ -12,3 +12,4 @@ keras
 datetime
 alpha_vantage
 bs4
+matplotlib
