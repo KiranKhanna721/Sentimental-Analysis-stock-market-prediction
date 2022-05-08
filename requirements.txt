@@ -13,4 +13,3 @@ datetime
 alpha_vantage
 bs4
 matplotlib
-nltk.download('stopwords')
