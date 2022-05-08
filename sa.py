@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import math
+import nltk
 from alpha_vantage.timeseries import TimeSeries
 from sklearn.metrics import mean_squared_error
 from bs4 import BeautifulSoup
@@ -15,7 +16,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from collections import Counter
 import warnings; warnings.simplefilter('ignore')
-import nltk
 import string
 from nltk import ngrams
 from nltk.tokenize import word_tokenize 
