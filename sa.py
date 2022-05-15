@@ -237,7 +237,7 @@ def recommending(df, global_polarity,today_stock,mean):
         print("According to the ML Predictions and Sentiment Analysis of Tweets, a",idea,"in stock is expected => ",decision)
     return idea, decision
 def app():
-    st.title("Combining Time Series and Sentiment Analysis for TCS Forecasting")
+    st.title("Combining Time Series and Sentiment Analysis for  Forecasting")
     ticker =  st.text_input("Enter a Stock Name")
     if st.button("Submit"):
         news = data(t=ticker)
@@ -253,7 +253,7 @@ def app():
         df.loc[(df['sentiment_clean'] < 0), 'sentiment'] = -1
         df.loc[(df['sentiment_clean'] == 0) | (df['sentiment_clean']<0.05), 'sentiment'] = 0
         df.to_csv('data.csv')
-        st.write("The latest News of TCS")
+        st.write("The latest News")
         df1 = df.head(1)
         st.table(df1[["Date","Headline"]])
         a = df1["sentiment"]
